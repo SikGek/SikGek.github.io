@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grocery Tracker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Computer Vision based Grocery and Fridge Tracker</h1>
+						<p>UCSD</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+
+								<!-- Text -->
+									<section>
+										<p>Along with other engineering students, we set out to build a computer vision based grocery and fridge tracker using a single board computer (SBC). We began out using a Raspberry Pi4, as it was the most accessible and easiest to use UI, however, we intended to switch this out for an ESP32 if it ever went into production.</p>
+										<p>We concluded that by using a 720p camera and a simple CNN for computer vision, the user can place the device on top of their fridge to easily detect what is going in and out of the fridge by comparing pixel values of the detected object in two consecutive shots. After achieving this, we created a SQL database in a local server along with a fully functioning and connected app that would update the contents of the fridge live. We wished to be able to turn any fridge into a smart fridge that you could check on your phone. Similar to the object retreival vehicle I was not aware of any methods to significantly increase speed of deep learning computation on an SBC, which is why the object is inserted into the fridge at a slower pace. I believe, if I were to revist this idea, this could easily work in real time on the SBC without the use of server computation.</p>
+									</section>
+
+								</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Leo Park</h2>
+				<dl class="alt">
+					<dt>Phone</dt>
+					<dd>(714) 822-0024</dd>
+					<dt>Email</dt>
+					<dd><a href="#">ihyunp1113@gmail.com</a></dd>
+				</dl>
+			</section>
+		</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

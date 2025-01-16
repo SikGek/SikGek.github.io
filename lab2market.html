@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Automatic item retreival robot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Automatic Semiconductor Tray Retreiver</h1>
+						<p>Lab To Market</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+
+								<!-- Text -->
+									<section>
+										<p>Lab To Market is an automation/controls company based in South Korea. They were in the process of working with a semiconductor chip manufacturer on how they could go about automating the process of distributing and retreiving trays that contain the chips. They decided to use a collaborative robot arm along with a lidar and a camera attached to a small motor vehicle. Their primary concern, however, was that the chips may be damaged if the vehicle arrives at a slight angle and robot arm picks it up at an angle it's not used to. I was tasked with researching and developing the process to amend this concern.</p>
+										<p>While researching, I iterated through several different classical computer vision algorithms, such as active contours, Scale-Invariant Feature Transform(SIFT), Histogram of Oriented Gradients(HOG), as well as deep learning methods, such as bouding boxes and image segmentation using SoTA models, that would allow the robot arm to straighten every time. Taking generalisation and future proofing into account, I decided to use a deep learning method that would produce angled bounding boxes. By getting the angle and shape of the trays, I was able to achieve a system that would detect and safely retreive the intended items given enough data. Now, I stay in contact with employees who took over the project at the end of my internship to further discuss and give ideas on how to improve.</p>
+
+									</section>
+
+								</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Leo Park</h2>
+				<dl class="alt">
+					<dt>Phone</dt>
+					<dd>(714) 822-0024</dd>
+					<dt>Email</dt>
+					<dd><a href="#">ihyunp1113@gmail.com</a></dd>
+				</dl>
+			</section>
+		</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
